@@ -20,5 +20,9 @@ let power = null
 
 console.log(typeof null) // null is a object o/p = object
 console.log(typeof undefined) //undefined 
+console.log(typeof name) //string
+console.log(typeof islogginng)//boolean
+console.log(typeof age)//number
+
 
     
