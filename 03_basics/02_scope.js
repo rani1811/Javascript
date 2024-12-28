@@ -15,13 +15,21 @@ if(true){
     console.log(c) //
 
     //funtion declaration
+
+
+   // addone(5) -Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
 function addone(num){
     return num + 1 
-}
+}addone(5)
 
-addone(5)
 
+
+//addtwo(5)  if declare funnction with const and assigning variable to it ,it will give error  
+// but you have declare a function without assiging to varibale ,it will create a hoisting
 const addtwo = function(num){
     return num + 1 
 }
 addtwo(5)
+
+
+
