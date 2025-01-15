@@ -4,8 +4,11 @@ const user ={
 
     greeting: function(){
        // console.log(`${this.username} , welcome`)
-    }
+      
 }
+}
+
+
 user.greeting()
 
 user.username ="sam"
@@ -20,6 +23,7 @@ user.greeting()
 // }
 // emp()
 
+// if we do console.log(this) in broswer will get a window object which is global
 
 // const empolyee = function (){
 //     let username ="user"
@@ -38,7 +42,7 @@ empolyee()
 
 function emp() {
     let username ="user"
-    //console.log(this) //it will prinnt object
+    //console.log(this) //it will print object
 }
 emp()
 
