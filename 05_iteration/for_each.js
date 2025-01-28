@@ -46,6 +46,9 @@ const mycoding =[
 ]
 
 
-mycoding.forEach((item)=>{
-  console.log(item.languageName)
-})
+// const values = mycoding.forEach((item)=>{
+//  // console.log(item.languageName)
+//  return undefined
+// })
+// console.log(values) //undefined 
+
