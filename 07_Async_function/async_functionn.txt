@@ -1,0 +1,18 @@
+javascript -> synchronous  single threaded 
+
+by default js is synchronous 
+
+each operation waits for the last one to complete before executing 
+
+->execution context 
+ 	->execution one line of code at a time 
+	->console log->1
+	->console.log->
+	call stack memory heap
+
+
+Blocking code       	   vs	   No Blocking Code 
+
+->Block the flow of program 	  ->does not block execution
+->read file sync		  ->read file async
+
