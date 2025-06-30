@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Pictures</title>
+    <style>
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+      }
+      li {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Amazing Pictures</h1>
+    <ul id="images">
+      <li>
+        <img
+          id="img1"
+          src="https://source.unsplash.com/random/200x150?nature"
+          alt="Amazing Nature"
+        />
+      </li>
+      <li>
+        <img
+          id="img2"
+          src="https://source.unsplash.com/random/200x150?water"
+          alt="Amazing Water"
+        />
+      </li>
+      <li>
+        <img
+          id="img3"
+          src="https://source.unsplash.com/random/200x150?mountains"
+          alt="Amazing Mountains"
+        />
+      </li>
+      <li>
+        <img
+          id="img4"
+          src="https://source.unsplash.com/random/200x150?forest"
+          alt="Amazing Forest"
+        />
+      </li>
+      <li>
+        <img
+          id="img5"
+          src="https://source.unsplash.com/random/200x150?city"
+          alt="Amazing City"
+        />
+      </li>
+    </ul>
+  </body>
+
+  <script>
+    // document.getElementById("img3").onclick = function () {
+    //   alert("click on img3");
+    // };
+
+    // document.getElementById("img3").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log(e);
+    //   },
+    //   false
+    // ); //by default false is present ,we can add true also
+
+    //old events
+    //attachEvent()
+    //jQuery - on eventlistener
+
+    //things to learn - type ,timestamp,defaultprevented
+    //target ,toElement ,srcElement , currentTarget
+    //clientx ,cilenty ,screenX ,screenY
+    //altkey ,ctrlkey ,shiftkey ,keyCode
+
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("clicked inside ul");
+    //   },
+    //   false
+    // );
+    // //stopPropagation()
+    // document.getElementById("img4").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("img4 clicked");
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+    // // preventDefault();
+    // document.getElementById("google").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     e.preventDefault();
+    //     console.log("clicked");
+    //   },
+    //   false
+    // );
+
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        // console.log(e.target.parentNode);
+        // let removeit = e.target.parentNode;
+        // removeit.remove();
+
+        console.log(e.target.tagName);
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.id);
+          let removeit = e.target.parentNode;
+          removeit.remove();
+        }
+
+        //removeit.parentNode.removeChild(removeit);
+      },
+      false
+    );
+  </script>
+</html>
